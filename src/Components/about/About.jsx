@@ -38,7 +38,7 @@ const About = () => {
             <article className='about__card'>
               < AiOutlineFolderOpen className='about__icon'/>
               <h5>Projects</h5>
-              <small><a href='https://github.com/WanyonyiKenya' target='_blank' rel= 'noopener noreferrer'>See my Github < VscGithub/></a></small>
+              <small><a href='https://github.com/WanyonyiKenya?tab=repositories' target='_blank' rel= 'noopener noreferrer'>See my Github < VscGithub/></a></small>
             </article>
           </div>
           <p>
