@@ -5,8 +5,7 @@ import {TbBrandMessenger} from 'react-icons/tb'
 import {SiWhatsapp} from 'react-icons/si'
 
 import  { useRef } from 'react';
-import emailjs from 'emailjs-com'
-
+import emailjs from '@emailjs/browser'
 const Contact = () => {
   const form = useRef()
   const sendEmail = (e) => {
