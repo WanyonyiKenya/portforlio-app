@@ -28,13 +28,13 @@ const Contact = () => {
             <MdMarkEmailRead className='contact__option-icon' />
             <h4>Email</h4>
             <h5>Email Brian</h5>
-            <a href='mailto:mmasafujnr@gmail.com' target="_blank">Send a mesage</a>
+            <a href='mailto:mmasafujnr@gmail.com' target="_blank" rel= 'noopener noreferrer'>Send a mesage</a>
           </article>
           <article className='contact__option'>
             <TbBrandMessenger className='contact__option-icon' />
             <h4>Messenger</h4>
             <h5>Connect with Brian on Messenger</h5>
-            <a href='https://m.me/reizybrian' target="_blank">Send a mesage</a>
+            <a href='https://m.me/reizybrian' target="_blank" rel= 'noopener noreferrer'>Send a mesage</a>
           </article>
           <article className='contact__option'>
             <SiWhatsapp className='contact__option-icon'/>
