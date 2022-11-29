@@ -11,21 +11,6 @@
 }
 
 
-.root{
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77,181,255, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
-
-    --transition : all 400ms ease;
-    --container-width-lg: 75%;
-    --container-width-md:86%;
-    --container-width-sm:90%
-
-
-}
 
 html{
     scroll-behavior: smooth ;
@@ -63,7 +48,7 @@ section{
 
 section > h2, section > h5{
     text-align: center;
-    color:   rgba(255, 255, 255, 0.6)  );
+    color:   rgba(255, 255, 255, 0.6)  ;
 }
 section >  h2{
     color: #4db5ff;
