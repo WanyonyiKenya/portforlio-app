@@ -3,8 +3,8 @@ import './port.css'
 import IMG1 from '../../Assets/todoApp.png'
  import IMG2 from '../../Assets/tenzy.png'
  import IMG3 from '../../Assets/port33.png'
-// import IMG4 from '../../Assets/port4.jpg'
-// import IMG5 from '../../Assets/port5.jpg'
+ import IMG4 from '../../Assets/admin.jpg'
+import IMG5 from '../../Assets/social.jpg'
 // import IMG6 from '../../Assets/port6.jpg'
 
 
@@ -28,25 +28,26 @@ const DATA = [
    {
      id:3,
      Image:IMG3,
-     title:"A good developer must have a good portfoli they say. I did make this app to enable me market myself and put my skills on display. I am thrilled on hoew this project turned out. It is one of my favorite projects so far. I must credit and praise myself since i did put in some amazing stuff in this project and it is a success for real.",
+     title:"A good developer must have a good portfolio they say. I did make this app to enable me market myself and put my skills on display. I am thrilled on hoew this project turned out. It is one of my favorite projects so far. I must credit and praise myself since i did put in some amazing stuff in this project and it is a success for real.",
      github: "https://github.com/WanyonyiKenya/portforlio-app",
      demo:'htpps://twitter.com'
    },
+  
+   {
+     id:4,
+     Image:IMG4,
+     title:"This is a simple made admin dashboard that i made to see how i can manage in an enterprise when we have a lot of structural data flowing through each section/department of the organization. The project turned out to be a success and I can not thank God for enabling me this far. I am really loving coding as time goes by.",
+     github: "https://github.com/WanyonyiKenya/admin-dashboard",
+     demo:'htpps://twitter.com'
+   },
+   {
+     id:5,
+     Image:IMG5,
+     title:"This is a full stack project spanning across major frameworks and libraries of Javascript. I used MongoDB, Express Js, React Js and Node Js. Visit the github page below to see more.",
+     github: "https://github.com/WanyonyiKenya/Social-App",
+     demo:'htpps://twitter.com'
+   },
   ]
-//   {
-//     id:4,
-//     Image:IMG4,
-//     title:"Çryptocurrency dashboard and financial visualization",
-//     github: "https://github.com",
-//     demo:'htpps://twitter.com'
-//   },
-//   {
-//     id:5,
-//     Image:IMG5,
-//     title:"Çryptocurrency dashboard and financial visualization",
-//     github: "https://github.com",
-//     demo:'htpps://twitter.com'
-//   },
 //   {
 //     id:6,
 //     Image:IMG6,

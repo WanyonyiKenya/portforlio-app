@@ -1,6 +1,6 @@
 import React from 'react'
 import  './about.css'
-import IM from '../../Assets/pic1.jpg'
+import IM from '../../Assets/user.jpg'
 import {CgWorkAlt} from 'react-icons/cg'
 import {FaUsers} from 'react-icons/fa'
 import {AiOutlineFolderOpen} from 'react-icons/ai'

@@ -1,3 +1,9 @@
+
+@keyframes spinning{
+    from{transform: rotate(0deg);}
+    to {transform:  rotate(360deg);}
+    
+}
 .about__container{
     display: grid;
     grid-template-columns: 35% 50%;
@@ -5,7 +11,7 @@
 }
 .about__me{
     width: 100%;
-    aspect-ratio:  1/1;
+    /* aspect-ratio:  1/1; */
     border-radius: 2rem;
     background: linear-gradient(
         45deg,
@@ -17,16 +23,26 @@
     place-items: center;
 }
 .about__me-image{
-   aspect-ratio: 1/1;
+   
     border-radius: 3rem;
-    overflow: hidden;
+    animation-name: spinning;
+    animation-duration:3s ;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
     transform: rotate(15deg);
-    transition: all 400ms ease;
+    
+    overflow-y: auto;
+    /* transform: rotate(15deg); */
+    transition: all 1400ms ease-in-out;
+    /* box-shadow: 12px 12px 15px transparent */
 
 }
 
 .about__me-image:hover{
-    transform: rotate(0deg);
+    transform: rotate(15deg);
+    transition: all 1400ms ease-in-out;
+    box-shadow: 12px 12px 15px transparent
+
 }
 
 .about__cards{

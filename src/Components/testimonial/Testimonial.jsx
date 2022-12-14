@@ -1,9 +1,7 @@
 import React from 'react'
 import './testimonial.css'
-import AV1 from '../../Assets/av1.jpg'
-import AV2 from '../../Assets/av2.jpg'
-import AV3 from '../../Assets/av3.jpg'
-import AV4 from '../../Assets/av4.jpg'
+import AV1 from '../../Assets/av1.png'
+
 
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
@@ -16,22 +14,8 @@ import 'swiper/css/pagination';
 const data = [
   {
     avatar:AV1,
-    name:'Kruger Janes',
-    review:"Quotes testimonials are one of the best testimonial examples. These brief stories are highly effective, convincing, and impactful, especially when the customer’s name, firm, and images are included. Visitors are encouraged to trust that the acquisition they consider is the proper one by using quotes. Quotes are easy to come by, but they’re also easy to create. This is something that businesses are aware of. Many people include hero photographs in their testimonials for this reason."
-  }, {
-    avatar:AV2,
-    name:'Jakob Mahome',
-    review:"Quotes testimonials are one of the best testimonial examples. These brief stories are highly effective, convincing, and impactful, especially when the customer’s name, firm, and images are included. Visitors are encouraged to trust that the acquisition they consider is the proper one by using quotes. Quotes are easy to come by, but they’re also easy to create. This is something that businesses are aware of. Many people include hero photographs in their testimonials for this reason."
-  },
-  {
-    avatar:AV3,
-    name:'Refsrt Khalsfischer',
-    review:"Quotes testimonials are one of the best testimonial examples. These brief stories are highly effective, convincing, and impactful, especially when the customer’s name, firm, and images are included. Visitors are encouraged to trust that the acquisition they consider is the proper one by using quotes. Quotes are easy to come by, but they’re also easy to create. This is something that businesses are aware of. Many people include hero photographs in their testimonials for this reason."
-  },
-  {
-    avatar:AV4,
-    name:'Small Joker',
-    review:"Quotes testimonials are one of the best testimonial examples. These brief stories are highly effective, convincing, and impactful, especially when the customer’s name, firm, and images are included. Visitors are encouraged to trust that the acquisition they consider is the proper one by using quotes. Quotes are easy to come by, but they’re also easy to create. This is something that businesses are aware of. Many people include hero photographs in their testimonials for this reason."
+    name:'Ndiritu Michael, (Mobile Developer)',
+    review:"Brian is a great person. I have been privileged to work with him on a personal level and a collaborative project and I can not lie about how amazing, dedicated and a serious person he is wihen it comes to work.His work ethic is nothing short of admirable."
   }
 ]
 

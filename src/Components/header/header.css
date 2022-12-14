@@ -1,3 +1,9 @@
+@keyframes h1{
+    from{
+        width: 0;
+    }
+}
+
 header{
     height: 100vh;
     padding-top: 7rem;
@@ -12,6 +18,13 @@ header{
     position: relative;
 }
 
+.myname{
+    
+    color: #4db5ff;
+    background-color: transparent;
+    letter-spacing: .15em;
+    
+}
 /* call to action buttons */
 
 
