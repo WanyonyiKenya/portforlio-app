@@ -1,20 +1,26 @@
 import React from 'react'
 import './contact.css'
+import {useForm} from 'react-hook-form'
 import {MdMarkEmailRead} from 'react-icons/md'
 import {TbBrandMessenger} from 'react-icons/tb'
 import {SiWhatsapp} from 'react-icons/si'
 
-import  { useRef } from 'react';
-import emailjs from '@emailjs/browser'
-const Contact = () => {
-  const form = useRef()
-  const sendEmail = (e) => {
-    e.preventDefault()
 
-    emailjs.sendForm('service_5jh8mtl', 'service_5jh8mtl', form.current, '1wdNhdHVILw4SE9L4')
-    
-    e.target.reset();
+const Contact = () => {
+  const {
+    register,
+    trigger,
+    formState:{errors}
+} = useForm()
+
+const handleSubmit = async (e) => {
+
+     
+  const isValid = await trigger()
+  if (!isValid){
+      e.preventDefault()
   }
+}
 
 
   return (
@@ -40,15 +46,62 @@ const Contact = () => {
             <SiWhatsapp className='contact__option-icon'/>
             <h4>Whatsapp</h4>
             <h5>Chat with me on Whatsapp</h5>
-            <a href='https://api.whatsapp.com/send?phone+254716169029' target="_blank">Send a mesage</a>
+            <a href='https://api.whatsapp.com/send?phone+254716169029' target="_blank" rel="noreferrer" >Send a mesage</a>
           </article>
         </div>
-        <form ref={form} onSubmit= {sendEmail}>
-          <input type="text" name='name' placeholder='Your full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name='message' rows="7" placeholder='Your Message' required ></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
-        </form>
+        <form
+                      target='_blank'
+                      onSubmit={handleSubmit}
+                      method= "POST"
+                      action='https://formsubmit.co/wangilabrianwanyonyi@gmail.com'
+                    >
+                        <input
+                            type ='text'
+                            placeholder='NAME'
+                            {...register("name", {
+                                required:true,
+                                minLength:3
+                            })}
+                        />
+                       { errors.name && (
+                            <p>
+                               { errors.name.type === "required" && "This field is required."}
+                               { errors.name.type === "minLength" && "Maimun length is 3 characters"}
+                            </p>
+                        )}
+                        <input
+                            type ='text'
+                            placeholder='EMAIL'
+                            {...register("email", {
+                                required:true,
+                                pattern : /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                            })}
+                        />
+                       { errors.email && (
+                            <p>
+                               { errors.email.type === "required" && "This field is required."}
+                               { errors.email.type === "pattern" && "Enter a valid email address"}
+                            </p>
+                        )}
+                        <textarea
+                        rows = {4}
+                        cols = {50}
+                        placeholder='MESSAGE'
+                        {...register("message", {
+                            required:true,
+                            minLength:10
+                        })}
+                    />
+                   { errors.message && (
+                        <p>
+                           { errors.message.type === "required" && "This field is required."}
+                           { errors.message.type === "minLength" && "Min char of 10"}
+                        </p>
+                    )}
+                    <button type='submit' className='btn btn-primary'>
+                        Submit
+                    </button>
+                    </form>
       </div>
     </section>
   )

@@ -1,26 +1,26 @@
 import React from 'react'
 import './port.css'
-import IMG1 from '../../Assets/todoApp.png'
+import IMG1 from '../../Assets/pp3.jpg'
  import IMG2 from '../../Assets/tenzy.png'
  import IMG3 from '../../Assets/port33.png'
  import IMG4 from '../../Assets/admin.jpg'
-import IMG5 from '../../Assets/social.jpg'
-// import IMG6 from '../../Assets/port6.jpg'
+import IMG5 from '../../Assets/pp2.jpg'
+ import IMG6 from '../../Assets/pp1.jpg'
 
 
 const DATA = [
   {
     id:1,
     Image:IMG1,
-    title:"I am proud of myself for doing this project. It was one of the first projects  i did but could ot post it on my Git page because i had none. In this todo app, i can creae,edit,delete a task, delete completed tasks, filter task as all, active and completed and also a special feature i added is that for every new edit, the task moves to the top of the page.",
-    github: "https://github.com/WanyonyiKenya/todo-app22",
-    demo:'htpps://twitter.com'
+    title:"A fully responsive TOUR/TRAVEL web Application making full use of Dynamic components in React and Javascript",
+    github: "https://github.com/WanyonyiKenya/Tour-travel-app/tree/master/travel-app",
+    demo:'https://tour-83f3lb2lk-wanyonyikenya.vercel.app/'
   },
 
   {
     id:2,
     Image:IMG2,
-    title:"This is an app i created with the help of Scrimba. This is an app that enabled me experiment the dice based tenzies game. It was superb doing this project and am happy because the project was a success and enabled me learn new skills.",
+    title:"This is an app i created with the help of Scrimba. This is an app that enabled me experiment the dice based tenzies game. ",
     github: "https://github.com/WanyonyiKenya/tenzies-game",
     demo:'htpps://twitter.com'
   },
@@ -28,7 +28,7 @@ const DATA = [
    {
      id:3,
      Image:IMG3,
-     title:"A good developer must have a good portfolio they say. I did make this app to enable me market myself and put my skills on display. I am thrilled on hoew this project turned out. It is one of my favorite projects so far. I must credit and praise myself since i did put in some amazing stuff in this project and it is a success for real.",
+     title:"A good developer must have a good PORTFOLIO. I did make this app to enable me market myself and put my skills on display. I am thrilled on how this project turned out.",
      github: "https://github.com/WanyonyiKenya/portforlio-app",
      demo:'htpps://twitter.com'
    },
@@ -36,26 +36,26 @@ const DATA = [
    {
      id:4,
      Image:IMG4,
-     title:"This is a simple made admin dashboard that i made to see how i can manage in an enterprise when we have a lot of structural data flowing through each section/department of the organization. The project turned out to be a success and I can not thank God for enabling me this far. I am really loving coding as time goes by.",
+     title:"This is a simple ADMIN DASHBOARD that i made to see how i can manage in an enterprise when we have a lot of structural data flowing through each section/department..",
      github: "https://github.com/WanyonyiKenya/admin-dashboard",
-     demo:'htpps://twitter.com'
+     demo:'https://admin-dashboard-omega-three.vercel.app/'
    },
    {
      id:5,
      Image:IMG5,
-     title:"This is a full stack project spanning across major frameworks and libraries of Javascript. I used MongoDB, Express Js, React Js and Node Js. Visit the github page below to see more.",
-     github: "https://github.com/WanyonyiKenya/Social-App",
-     demo:'htpps://twitter.com'
+     title:"This a fully responsive project for a GYM FIRM showcasing my skills in Typescript.",
+     github: "https://github.com/WanyonyiKenya/GYM-Ts",
+     demo:'https://gym-ts-one.vercel.app/'
    },
-  ]
-//   {
-//     id:6,
-//     Image:IMG6,
-//     title:"Çryptocurrency dashboard and financial visualization",
-//     github: "https://github.com",
-//     demo:'htpps://twitter.com'
-//   }
-// ]
+  
+   {
+     id:6,
+     Image:IMG6,
+     title:"This is a  WEATHER FORECAST app making use of  The Weather and GeoDB ApI's",
+     github: "https://github.com/WanyonyiKenya/Weather_app-and-Forecast",
+     demo:'https://weather-app-and-forecast.vercel.app/'
+   }
+ ]
 
 
 
@@ -76,7 +76,7 @@ const Port = () => {
           <h3>{title}</h3>
           <div className="portfolio__item-cta">
             <a href={github} className='btn' target="_blank" rel= 'noopener noreferrer'>Github</a>
-          <a href={demo} className='btn btn-primary' target="_blank" rel= 'noopener noreferrer'>Tweet</a>
+          <a href={demo} className='btn btn-primary' target="_blank" rel= 'noopener noreferrer'>Live Demo</a>
           </div>
           
         </article>
