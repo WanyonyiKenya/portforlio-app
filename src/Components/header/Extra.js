@@ -1,5 +1,5 @@
 import React from 'react'
-import CV from '../../Assets/Brian Wanyonyi CV.docx'
+import CV from '../../Assets/bw.pdf'
 
 const Extra = () => {
   return (
